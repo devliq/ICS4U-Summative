@@ -1,16 +1,22 @@
 .
-├── main.py
-├── config.py
-├── constants.py
-├── dicts.py
-├── bubble_sort.py
-├── quick_sort.py
-├── merge_sort.py
-├── selection_sort.py
-├── insertion_sort.py
-├── heap_sort.py
-├── radix_sort.py
-├── utils.py
+├── data/
 ├── tests/
 │   ├── test_sorting.py
-├── data/
+├── .gitignore
+├── bubble_sort.py
+├── config.py
+├── constants.py
+├── debug.lol
+├── dicts.py
+├── folder_structure.txt
+├── heap_sort.py
+├── insertion_sort.py
+├── LICENSE
+├── main.py
+├── merge_sort.py
+├── quick_sort.py
+├── radix_sort.py
+├── README
+├── requirements.txt
+├── selection_sort.py
+├── utils.py
