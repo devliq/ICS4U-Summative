@@ -10,7 +10,7 @@ from tkinter import ttk
 from ttkbootstrap import Style
 from config import WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE
 from utils import generate_random_data, visualize_data
-from dicts import SORTING_ALGORITHMS
+from dicts import SORTING_ALGORITHMS, DESCRIPTIONS
 
 class SortingApp:
     def __init__(self, master):
@@ -20,14 +20,14 @@ class SortingApp:
         self.sorting_methods = SORTING_ALGORITHMS
         self.root = self.master
         self.data = []
-        self.root.title("Sorting Algorithm Visualizer")
+        self.root.title(WINDOW_TITLE)
         
         style = Style(theme="cyborg")
 
-        self.canvas = tk.Canvas(width=800, height=400, bg="white")
+        self.canvas = tk.Canvas(width=WINDOW_WIDTH, height=WINDOW_HEIGHT, bg="white")
         self.sorting_in_progress = False
 
-        self.main_frame = tk.Frame(root, padx=10, pady=10)
+        self.main_frame = tk.Frame(self.root, padx=10, pady=10)
         self.main_frame.grid(row=0, column=0, sticky="nsew")
 
         self.create_control_buttons()
@@ -80,19 +80,14 @@ class SortingApp:
         self.selection_notebook = ttk.Notebook(algorithm_frame)
         self.selection_notebook.grid(row=0, column=0, sticky="nsew")
 
-        algorithms = ["Bubble Sort", "Selection Sort", "Insertion Sort", "Merge Sort", "Quick Sort", "Radix Sort", "Heap Sort"]
-        random_algorithm = random.choice(algorithms)
+        random_algorithm = random.choice(list(SORTING_ALGORITHMS.keys()))
 
-        for algo in algorithms:
+        for algo, description in SORTING_ALGORITHMS.items():
             frame = tk.Frame(self.selection_notebook)
             self.selection_notebook.add(frame, text=algo)
             ttk.Label(frame, text="Algorithm Description:").grid(row=0, column=0, padx=5, pady=(10, 0), sticky="w")
-            ttk.Label(frame, text=self.get_algorithm_description(algo)).grid(row=1, column=0, padx=5, pady=5, sticky="w")
+            ttk.Label(frame, text=DESCRIPTIONS.get(algo, "No description available.")).grid(row=1, column=0, padx=5, pady=5, sticky="w")
             ttk.Label(frame, text="Algorithm Comparison:").grid(row=2, column=0, padx=5, pady=(10, 0), sticky="w")
-
-            radio_var = tk.IntVar(value=algo == random_algorithm)
-            radiobutton = ttk.Radiobutton(frame, text="Select", variable=radio_var, command=lambda a=algo: self.set_selected_algorithm(a))
-            radiobutton.grid(row=3, column=0, padx=5, pady=5, sticky="w")
 
         self.selected_algorithm_var = tk.StringVar(value=random_algorithm)
         self.selection_notebook.bind("<<NotebookTabChanged>>", self.on_tab_changed)
@@ -157,8 +152,8 @@ class SortingApp:
 
     def draw_data(self, data, color_array):
         self.canvas.delete("all")
-        canvas_height = 400
-        canvas_width = 800
+        canvas_height = WINDOW_HEIGHT
+        canvas_width = WINDOW_WIDTH
         bar_width = canvas_width / (len(data) + 1)
         offset = 10
         spacing = 2
@@ -175,16 +170,7 @@ class SortingApp:
         self.master.update_idletasks()
 
     def get_algorithm_description(self, algo):
-        descriptions = {
-            "Bubble Sort": "Repeatedly swaps the adjacent elements if they are in the wrong order.",
-            "Selection Sort": "Repeatedly finds the minimum element from the unsorted part and puts it at the beginning.",
-            "Insertion Sort": "Builds the final sorted array one item at a time.",
-            "Merge Sort": "Divides the array into halves and merges them back in sorted order.",
-            "Quick Sort": "Picks an element as pivot and partitions the array around the pivot.",
-            "Radix Sort": "Sorts the numbers by processing individual digits.",
-            "Heap Sort": "Converts the array into a heap and extracts elements in sorted order."
-        }
-        return descriptions.get(algo, "No description available.")
+        return DESCRIPTIONS.get(algo, "No description available.")
 
 if __name__ == "__main__":
     root = tk.Tk()

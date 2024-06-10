@@ -1,110 +1,125 @@
 # dicts.py
 
-from utils import (
-    generate_random_data,
-    generate_sorted_data,
-    generate_reversed_data,
-    generate_nearly_sorted_data,
-    generate_duplicate_values,
-    generate_special_case_data
-)
+from selection_sort import selection_sort
+from insertion_sort import insertion_sort
+from bubble_sort import bubble_sort
+from radix_sort import radix_sort
+from merge_sort import merge_sort
+from heap_sort import heap_sort
+from quick_sort import quick_sort
+from utils import generate_random_data, generate_sorted_data, generate_reversed_data, generate_nearly_sorted_data, generate_duplicate_values, generate_special_case_data
 
 # Dictionary to store sorting algorithm names and their corresponding functions
 SORTING_ALGORITHMS = {
-    "Bubble Sort": "bubble_sort",
-    "Quick Sort": "quick_sort",
-    "Merge Sort": "merge_sort",
+    "Selection Sort": selection_sort,
+    "Insertion Sort": insertion_sort,
+    "Bubble Sort": bubble_sort,
+    "Radix Sort": radix_sort,    
+    "Merge Sort": merge_sort, 
+    "Heap Sort": heap_sort,
+    "Quick Sort": quick_sort
+}
+
+SORTING_ALGORITHMS_FUNCTIONS = {
     "Selection Sort": "selection_sort",
     "Insertion Sort": "insertion_sort",
+    "Bubble Sort": "bubble_sort",
+    "Radix Sort": "radix_sort",    
+    "Merge Sort": "merge_sort", 
     "Heap Sort": "heap_sort",
-    "Radix Sort": "radix_sort"
+    "Quick Sort": "quick_sort"
 }
 
 # Dictionary to store the time complexity of each sorting algorithm
 TIME_COMPLEXITIES = {
-    "Bubble Sort": "O(n^2)",
-    "Quick Sort": "O(n log n)",
-    "Merge Sort": "O(n log n)",
     "Selection Sort": "O(n^2)",
     "Insertion Sort": "O(n^2)",
+    "Bubble Sort": "O(n^2)",
+    "Radix Sort": "O(nk)",
+    "Merge Sort": "O(n log n)",
     "Heap Sort": "O(n log n)",
-    "Radix Sort": "O(nk)"
+    "Quick Sort": "O(n log n)"
 }
 
 # Dictionary to store the space complexity of each sorting algorithm
 SPACE_COMPLEXITIES = {
-    "Bubble Sort": "O(1)",
-    "Quick Sort": "O(log n)",
-    "Merge Sort": "O(n)",
     "Selection Sort": "O(1)",
     "Insertion Sort": "O(1)",
+    "Bubble Sort": "O(1)",
+    "Radix Sort": "O(n + k)",
+    "Merge Sort": "O(n)",
     "Heap Sort": "O(1)",
-    "Radix Sort": "O(n + k)"
+    "Quick Sort": "O(log n)"
 }
 
 # Dictionary to store the best case time complexity of each sorting algorithm
 BEST_CASE_TIME_COMPLEXITIES = {
-    "Bubble Sort": "O(n)",
-    "Quick Sort": "O(n log n)",
-    "Merge Sort": "O(n log n)",
     "Selection Sort": "O(n^2)",
     "Insertion Sort": "O(n)",
+    "Bubble Sort": "O(n)",
+    "Radix Sort": "O(nk)",
+    "Merge Sort": "O(n log n)",
     "Heap Sort": "O(n log n)",
-    "Radix Sort": "O(nk)"
+    "Quick Sort": "O(n log n)"
 }
 
 # Dictionary to store the worst case time complexity of each sorting algorithm
 WORST_CASE_TIME_COMPLEXITIES = {
-    "Bubble Sort": "O(n^2)",
-    "Quick Sort": "O(n^2)",
-    "Merge Sort": "O(n log n)",
     "Selection Sort": "O(n^2)",
     "Insertion Sort": "O(n^2)",
+    "Bubble Sort": "O(n^2)",
+    "Radix Sort": "O(nk)",
+    "Merge Sort": "O(n log n)",
     "Heap Sort": "O(n log n)",
-    "Radix Sort": "O(nk)"
+    "Quick Sort": "O(n^2)"
 }
 
 # Dictionary to store the average case time complexity of each sorting algorithm
 AVERAGE_CASE_TIME_COMPLEXITIES = {
-    "Bubble Sort": "O(n^2)",
-    "Quick Sort": "O(n log n)",
-    "Merge Sort": "O(n log n)",
     "Selection Sort": "O(n^2)",
     "Insertion Sort": "O(n^2)",
+    "Bubble Sort": "O(n^2)",
+    "Radix Sort": "O(nk)",
+    "Merge Sort": "O(n log n)",
     "Heap Sort": "O(n log n)",
-    "Radix Sort": "O(nk)"
+    "Quick Sort": "O(n log n)"    
 }
 
 # Dictionary to store the stability of each sorting algorithm
 STABILITY = {
-    "Bubble Sort": "Stable",
-    "Quick Sort": "Unstable",
-    "Merge Sort": "Stable",
     "Selection Sort": "Unstable",
     "Insertion Sort": "Stable",
+    "Bubble Sort": "Stable",
+    "Radix Sort": "Stable",
+    "Merge Sort": "Stable",
     "Heap Sort": "Unstable",
-    "Radix Sort": "Stable"
+    "Quick Sort": "Unstable"
+}
+
+# Dictionary to store the score of each sorting algorithm
+SCORE = {
+    "Selection Sort": "1",
+    "Insertion Sort": "2",
+    "Bubble Sort": "3",
+    "Radix Sort": "4",
+    "Merge Sort": "5",
+    "Heap Sort": "6",
+    "Quick Sort": "7"
 }
 
 # Dictionary to store the description of each sorting algorithm
 DESCRIPTIONS = {
-    "Bubble Sort": "Repeatedly swaps the adjacent elements if they are in the wrong order.",
     "Selection Sort": "Repeatedly finds the minimum element from the unsorted part and puts it at the beginning.",
     "Insertion Sort": "Builds the final sorted array one item at a time.",
-    "Merge Sort": "Divides the array into halves and merges them back in sorted order.",
-    "Quick Sort": "Picks an element as pivot and partitions the array around the pivot.",
+    "Bubble Sort": "Repeatedly swaps the adjacent elements if they are in the wrong order.",
     "Radix Sort": "Sorts the numbers by processing individual digits.",
-    "Heap Sort": "Converts the array into a heap and extracts elements in sorted order."
+    "Merge Sort": "Divides the array into halves and merges them back in sorted order.",
+    "Heap Sort": "Converts the array into a heap and extracts elements in sorted order.",
+    "Quick Sort": "Picks an element as pivot and partitions the array around the pivot."
 }
 
 # Dictionary to store the pseudocode of each sorting algorithm
 PSEUDOCODES = {
-    "Bubble Sort": [
-        "repeat until no swaps:",
-        "    for i from 0 to n-2:",
-        "        if i'th and (i+1)'th element are in wrong order:",
-        "            swap them"
-    ],
     "Selection Sort": [
         "repeat until no unsorted elements:",
         "    find the minimum element in the unsorted part",
@@ -115,6 +130,16 @@ PSEUDOCODES = {
         "    take the leftmost unsorted element",
         "    insert it into the correct position in the sorted part"
     ],
+    "Bubble Sort": [
+        "repeat until no swaps:",
+        "    for i from 0 to n-2:",
+        "        if i'th and (i+1)'th element are in wrong order:",
+        "            swap them"
+    ],
+    "Radix Sort": [
+        "for each digit from least significant to most significant:",
+        "    sort the numbers according to that digit"
+    ],
     "Merge Sort": [
         "if only one element:",
         "    return",
@@ -123,6 +148,11 @@ PSEUDOCODES = {
         "    sort the right half",
         "    merge the sorted halves"
     ],
+    "Heap Sort": [
+        "build a max heap from the array",
+        "repeat until no elements in the heap:",
+        "    extract the maximum element from the heap"
+    ],
     "Quick Sort": [
         "if only one element:",
         "    return",
@@ -130,39 +160,22 @@ PSEUDOCODES = {
         "    pick a pivot",
         "    partition the array around the pivot",
         "    recursively sort the left and right parts"
-    ],
-    "Radix Sort": [
-        "for each digit from least significant to most significant:",
-        "    sort the numbers according to that digit"
-    ],
-    "Heap Sort": [
-        "build a max heap from the array",
-        "repeat until no elements in the heap:",
-        "    extract the maximum element from the heap"
     ]
 }
 
 # Dictionary to store the flowchart of each sorting algorithm
 FLOWCHART = {
-    "Bubble Sort": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif",
     "Selection Sort": "https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif",
     "Insertion Sort": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif",
-    "Merge Sort": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif",
-    "Quick Sort": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif",
+    "Bubble Sort": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif",
     "Radix Sort": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Radix_sort_example.gif",
-    "Heap Sort": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif"
+    "Merge Sort": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif",
+    "Heap Sort": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif",
+    "Quick Sort": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif"
 }
 
 # Dictionary to store the code snippets of each sorting algorithm
 CODE_SNIPPETS = {
-    "Bubble Sort": [
-        "def bubble_sort(data):",
-        "    n = len(data)",
-        "    for i in range(n):",
-        "        for j in range(0, n-i-1):",
-        "            if data[j] > data[j+1]:",
-        "                data[j], data[j+1] = data[j+1], data[j]"
-    ],
     "Selection Sort": [
         "def selection_sort(data):",
         "    n = len(data)",
@@ -183,6 +196,39 @@ CODE_SNIPPETS = {
         "            data[j+1] = data[j]",
         "            j -= 1",
         "        data[j+1] = key"
+    ],
+    "Bubble Sort": [
+        "def bubble_sort(data):",
+        "    n = len(data)",
+        "    for i in range(n):",
+        "        for j in range(0, n-i-1):",
+        "            if data[j] > data[j+1]:",
+        "                data[j], data[j+1] = data[j+1], data[j]"
+    ],
+    "Radix Sort": [
+        "def counting_sort(data, exp):",
+        "    n = len(data)",
+        "    output = [0] * n",
+        "    count = [0] * 10",
+        "    for i in range(n):",
+        "        index = data[i] // exp",
+        "        count[index % 10] += 1",
+        "    for i in range(1, 10):",
+        "        count[i] += count[i-1]",
+        "    i = n - 1",
+        "    while i >= 0:",
+        "        index = data[i] // exp",
+        "        output[count[index % 10] - 1] = data[i]",
+        "        count[index % 10] -= 1",
+        "        i -= 1",
+        "    for i in range(n):",
+        "        data[i] = output[i]",
+        "def radix_sort(data):",
+        "    max_num = max(data)",
+        "    exp = 1",
+        "    while max_num // exp > 0:",
+        "        counting_sort(data, exp)",
+        "        exp *= 10"
     ],
     "Merge Sort": [
         "def merge_sort(data):",
@@ -217,49 +263,6 @@ CODE_SNIPPETS = {
         "            merge(arr, l, m, r)",
         "    merge_sort_helper(data, 0, len(data)-1)"
     ],
-    "Quick Sort": [
-        "def quick_sort(data):",
-        "    def partition(arr, low, high):",
-        "        pivot = arr[high]",
-        "        i = low - 1",
-        "        for j in range(low, high):",
-        "            if arr[j] < pivot:",
-        "                i += 1",
-        "                arr[i], arr[j] = arr[j], arr[i]",
-        "        arr[i+1], arr[high] = arr[high], arr[i+1]",
-        "        return i+1",
-        "    def quick_sort_helper(arr, low, high):",
-        "        if low < high:",
-        "            pi = partition(arr, low, high)",
-        "            quick_sort_helper(arr, low, pi-1)",
-        "            quick_sort_helper(arr, pi+1, high)",
-        "    quick_sort_helper(data, 0, len(data)-1)"
-    ],
-    "Radix Sort": [
-        "def counting_sort(data, exp):",
-        "    n = len(data)",
-        "    output = [0] * n",
-        "    count = [0] * 10",
-        "    for i in range(n):",
-        "        index = data[i] // exp",
-        "        count[index % 10] += 1",
-        "    for i in range(1, 10):",
-        "        count[i] += count[i-1]",
-        "    i = n - 1",
-        "    while i >= 0:",
-        "        index = data[i] // exp",
-        "        output[count[index % 10] - 1] = data[i]",
-        "        count[index % 10] -= 1",
-        "        i -= 1",
-        "    for i in range(n):",
-        "        data[i] = output[i]",
-        "def radix_sort(data):",
-        "    max_num = max(data)",
-        "    exp = 1",
-        "    while max_num // exp > 0:",
-        "        counting_sort(data, exp)",
-        "        exp *= 10"
-    ],
     "Heap Sort": [
         "def heap_sort(data):",
         "    def heapify(arr, n, i):",
@@ -279,6 +282,24 @@ CODE_SNIPPETS = {
         "    for i in range(n-1, 0, -1):",
         "        data[i], data[0] = data[0], data[i]",
         "        heapify(data, i, 0)"
+    ],
+    "Quick Sort": [
+        "def quick_sort(data):",
+        "    def partition(arr, low, high):",
+        "        pivot = arr[high]",
+        "        i = low - 1",
+        "        for j in range(low, high):",
+        "            if arr[j] < pivot:",
+        "                i += 1",
+        "                arr[i], arr[j] = arr[j], arr[i]",
+        "        arr[i+1], arr[high] = arr[high], arr[i+1]",
+        "        return i+1",
+        "    def quick_sort_helper(arr, low, high):",
+        "        if low < high:",
+        "            pi = partition(arr, low, high)",
+        "            quick_sort_helper(arr, low, pi-1)",
+        "            quick_sort_helper(arr, pi+1, high)",
+        "    quick_sort_helper(data, 0, len(data)-1)"
     ]
 }
 

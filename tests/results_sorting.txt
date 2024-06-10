@@ -1,168 +1,168 @@
-Results for Bubble Sort:
-Bubble Sort     - Random              : Execution Time: 0.005996 seconds
-Bubble Sort     - Sorted              : Execution Time: 0.005009 seconds
-Bubble Sort     - Reversed            : Execution Time: 0.005506 seconds
-Bubble Sort     - Nearly Sorted       : Execution Time: 0.005998 seconds
-Bubble Sort     - Duplicate Values    : Execution Time: 0.006001 seconds
-Bubble Sort     - Identical Elements  : Execution Time: 0.008003 seconds
-Bubble Sort     - Two Unique Values   : Execution Time: 0.008002 seconds
-Bubble Sort     - Three Unique Values : Execution Time: 0.006000 seconds
-Bubble Sort     - Four Unique Values  : Execution Time: 0.007014 seconds
-Bubble Sort     - Five Unique Values  : Execution Time: 0.008985 seconds
-
-Sorted Execution Times:
-  - Sorted: 0.005009 seconds
-  - Reversed: 0.005506 seconds
-  - Random: 0.005996 seconds
-  - Nearly Sorted: 0.005998 seconds
-  - Three Unique Values: 0.006000 seconds
-  - Duplicate Values: 0.006001 seconds
-  - Four Unique Values: 0.007014 seconds
-  - Two Unique Values: 0.008002 seconds
-  - Identical Elements: 0.008003 seconds
-  - Five Unique Values: 0.008985 seconds
-
-Results for Quick Sort:
-Quick Sort      - Random              : Execution Time: 0.012003 seconds
-Quick Sort      - Sorted              : Execution Time: 0.008001 seconds
-Quick Sort      - Reversed            : Execution Time: 0.009020 seconds
-Quick Sort      - Nearly Sorted       : Execution Time: 0.007004 seconds
-Quick Sort      - Duplicate Values    : Execution Time: 0.008033 seconds
-Quick Sort      - Identical Elements  : Execution Time: 0.013004 seconds
-Quick Sort      - Two Unique Values   : Execution Time: 0.005993 seconds
-Quick Sort      - Three Unique Values : Execution Time: 0.009004 seconds
-Quick Sort      - Four Unique Values  : Execution Time: 0.006000 seconds
-Quick Sort      - Five Unique Values  : Execution Time: 0.009007 seconds
-
-Sorted Execution Times:
-  - Two Unique Values: 0.005993 seconds
-  - Four Unique Values: 0.006000 seconds
-  - Nearly Sorted: 0.007004 seconds
-  - Sorted: 0.008001 seconds
-  - Duplicate Values: 0.008033 seconds
-  - Three Unique Values: 0.009004 seconds
-  - Five Unique Values: 0.009007 seconds
-  - Reversed: 0.009020 seconds
-  - Random: 0.012003 seconds
-  - Identical Elements: 0.013004 seconds
-
-Results for Merge Sort:
-Merge Sort      - Random              : Execution Time: 0.000000 seconds
-Merge Sort      - Sorted              : Execution Time: 0.000000 seconds
-Merge Sort      - Reversed            : Execution Time: 0.000000 seconds
-Merge Sort      - Nearly Sorted       : Execution Time: 0.000000 seconds
-Merge Sort      - Duplicate Values    : Execution Time: 0.000995 seconds
-Merge Sort      - Identical Elements  : Execution Time: 0.000999 seconds
-Merge Sort      - Two Unique Values   : Execution Time: 0.003042 seconds
-Merge Sort      - Three Unique Values : Execution Time: 0.001034 seconds
-Merge Sort      - Four Unique Values  : Execution Time: 0.000000 seconds
-Merge Sort      - Five Unique Values  : Execution Time: 0.000000 seconds
-
-Sorted Execution Times:
-  - Random: 0.000000 seconds
-  - Sorted: 0.000000 seconds
-  - Reversed: 0.000000 seconds
-  - Nearly Sorted: 0.000000 seconds
-  - Four Unique Values: 0.000000 seconds
-  - Five Unique Values: 0.000000 seconds
-  - Duplicate Values: 0.000995 seconds
-  - Identical Elements: 0.000999 seconds
-  - Three Unique Values: 0.001034 seconds
-  - Two Unique Values: 0.003042 seconds
-
 Results for Selection Sort:
-Selection Sort  - Random              : Execution Time: 0.000997 seconds
-Selection Sort  - Sorted              : Execution Time: 0.000000 seconds
-Selection Sort  - Reversed            : Execution Time: 0.001000 seconds
-Selection Sort  - Nearly Sorted       : Execution Time: 0.000000 seconds
-Selection Sort  - Duplicate Values    : Execution Time: 0.000000 seconds
-Selection Sort  - Identical Elements  : Execution Time: 0.002014 seconds
-Selection Sort  - Two Unique Values   : Execution Time: 0.001000 seconds
-Selection Sort  - Three Unique Values : Execution Time: 0.001020 seconds
-Selection Sort  - Four Unique Values  : Execution Time: 0.000971 seconds
-Selection Sort  - Five Unique Values  : Execution Time: 0.001043 seconds
+Selection Sort  - Random              : Execution Time: 1.043306 seconds
+Selection Sort  - Sorted              : Execution Time: 1.047911 seconds
+Selection Sort  - Reversed            : Execution Time: 1.047339 seconds
+Selection Sort  - Nearly Sorted       : Execution Time: 1.052239 seconds
+Selection Sort  - Duplicate Values    : Execution Time: 1.058325 seconds
+Selection Sort  - Identical Elements  : Execution Time: 1.047730 seconds
+Selection Sort  - Two Unique Values   : Execution Time: 1.045404 seconds
+Selection Sort  - Three Unique Values : Execution Time: 1.029458 seconds
+Selection Sort  - Four Unique Values  : Execution Time: 1.044779 seconds
+Selection Sort  - Five Unique Values  : Execution Time: 1.054204 seconds
 
-Sorted Execution Times:
-  - Sorted: 0.000000 seconds
-  - Nearly Sorted: 0.000000 seconds
-  - Duplicate Values: 0.000000 seconds
-  - Four Unique Values: 0.000971 seconds
-  - Random: 0.000997 seconds
-  - Reversed: 0.001000 seconds
-  - Two Unique Values: 0.001000 seconds
-  - Three Unique Values: 0.001020 seconds
-  - Five Unique Values: 0.001043 seconds
-  - Identical Elements: 0.002014 seconds
+Sorted Execution Times for Selection Sort: Fastest to Slowest
+Selection Sort - Three Unique Values: 1.029458 seconds
+Selection Sort - Random: 1.043306 seconds
+Selection Sort - Four Unique Values: 1.044779 seconds
+Selection Sort - Two Unique Values: 1.045404 seconds
+Selection Sort - Reversed: 1.047339 seconds
+Selection Sort - Identical Elements: 1.047730 seconds
+Selection Sort - Sorted: 1.047911 seconds
+Selection Sort - Nearly Sorted: 1.052239 seconds
+Selection Sort - Five Unique Values: 1.054204 seconds
+Selection Sort - Duplicate Values: 1.058325 seconds
 
 Results for Insertion Sort:
-Insertion Sort  - Random              : Execution Time: 0.000000 seconds
-Insertion Sort  - Sorted              : Execution Time: 0.000000 seconds
-Insertion Sort  - Reversed            : Execution Time: 0.001000 seconds
-Insertion Sort  - Nearly Sorted       : Execution Time: 0.000000 seconds
-Insertion Sort  - Duplicate Values    : Execution Time: 0.000000 seconds
-Insertion Sort  - Identical Elements  : Execution Time: 0.000000 seconds
-Insertion Sort  - Two Unique Values   : Execution Time: 0.000000 seconds
-Insertion Sort  - Three Unique Values : Execution Time: 0.000000 seconds
-Insertion Sort  - Four Unique Values  : Execution Time: 0.000000 seconds
-Insertion Sort  - Five Unique Values  : Execution Time: 0.000000 seconds
+Insertion Sort  - Random              : Execution Time: 1.037394 seconds
+Insertion Sort  - Sorted              : Execution Time: 1.037062 seconds
+Insertion Sort  - Reversed            : Execution Time: 1.043420 seconds
+Insertion Sort  - Nearly Sorted       : Execution Time: 1.039829 seconds
+Insertion Sort  - Duplicate Values    : Execution Time: 1.044528 seconds
+Insertion Sort  - Identical Elements  : Execution Time: 1.034840 seconds
+Insertion Sort  - Two Unique Values   : Execution Time: 1.039627 seconds
+Insertion Sort  - Three Unique Values : Execution Time: 1.025244 seconds
+Insertion Sort  - Four Unique Values  : Execution Time: 1.038203 seconds
+Insertion Sort  - Five Unique Values  : Execution Time: 1.042933 seconds
 
-Sorted Execution Times:
-  - Random: 0.000000 seconds
-  - Sorted: 0.000000 seconds
-  - Nearly Sorted: 0.000000 seconds
-  - Duplicate Values: 0.000000 seconds
-  - Identical Elements: 0.000000 seconds
-  - Two Unique Values: 0.000000 seconds
-  - Three Unique Values: 0.000000 seconds
-  - Four Unique Values: 0.000000 seconds
-  - Five Unique Values: 0.000000 seconds
-  - Reversed: 0.001000 seconds
+Sorted Execution Times for Insertion Sort: Fastest to Slowest
+Insertion Sort - Three Unique Values: 1.025244 seconds
+Insertion Sort - Identical Elements: 1.034840 seconds
+Insertion Sort - Sorted: 1.037062 seconds
+Insertion Sort - Random: 1.037394 seconds
+Insertion Sort - Four Unique Values: 1.038203 seconds
+Insertion Sort - Two Unique Values: 1.039627 seconds
+Insertion Sort - Nearly Sorted: 1.039829 seconds
+Insertion Sort - Five Unique Values: 1.042933 seconds
+Insertion Sort - Reversed: 1.043420 seconds
+Insertion Sort - Duplicate Values: 1.044528 seconds
 
-Results for Heap Sort:
-Heap Sort       - Random              : Execution Time: 0.002028 seconds
-Heap Sort       - Sorted              : Execution Time: 0.002002 seconds
-Heap Sort       - Reversed            : Execution Time: 0.001968 seconds
-Heap Sort       - Nearly Sorted       : Execution Time: 0.001004 seconds
-Heap Sort       - Duplicate Values    : Execution Time: 0.000000 seconds
-Heap Sort       - Identical Elements  : Execution Time: 0.000000 seconds
-Heap Sort       - Two Unique Values   : Execution Time: 0.000000 seconds
-Heap Sort       - Three Unique Values : Execution Time: 0.000997 seconds
-Heap Sort       - Four Unique Values  : Execution Time: 0.002002 seconds
-Heap Sort       - Five Unique Values  : Execution Time: 0.002039 seconds
+Results for Bubble Sort:
+Bubble Sort     - Random              : Execution Time: 0.003011 seconds
+Bubble Sort     - Sorted              : Execution Time: 0.003994 seconds
+Bubble Sort     - Reversed            : Execution Time: 0.002017 seconds
+Bubble Sort     - Nearly Sorted       : Execution Time: 0.000999 seconds
+Bubble Sort     - Duplicate Values    : Execution Time: 0.001048 seconds
+Bubble Sort     - Identical Elements  : Execution Time: 0.001009 seconds
+Bubble Sort     - Two Unique Values   : Execution Time: 0.001005 seconds
+Bubble Sort     - Three Unique Values : Execution Time: 0.002001 seconds
+Bubble Sort     - Four Unique Values  : Execution Time: 0.000996 seconds
+Bubble Sort     - Five Unique Values  : Execution Time: 0.000000 seconds
 
-Sorted Execution Times:
-  - Duplicate Values: 0.000000 seconds
-  - Identical Elements: 0.000000 seconds
-  - Two Unique Values: 0.000000 seconds
-  - Three Unique Values: 0.000997 seconds
-  - Nearly Sorted: 0.001004 seconds
-  - Reversed: 0.001968 seconds
-  - Sorted: 0.002002 seconds
-  - Four Unique Values: 0.002002 seconds
-  - Random: 0.002028 seconds
-  - Five Unique Values: 0.002039 seconds
+Sorted Execution Times for Bubble Sort: Fastest to Slowest
+Bubble Sort - Five Unique Values: 0.000000 seconds
+Bubble Sort - Four Unique Values: 0.000996 seconds
+Bubble Sort - Nearly Sorted: 0.000999 seconds
+Bubble Sort - Two Unique Values: 0.001005 seconds
+Bubble Sort - Identical Elements: 0.001009 seconds
+Bubble Sort - Duplicate Values: 0.001048 seconds
+Bubble Sort - Three Unique Values: 0.002001 seconds
+Bubble Sort - Reversed: 0.002017 seconds
+Bubble Sort - Random: 0.003011 seconds
+Bubble Sort - Sorted: 0.003994 seconds
 
 Results for Radix Sort:
-Radix Sort      - Random              : Execution Time: 0.000000 seconds
-Radix Sort      - Sorted              : Execution Time: 0.000000 seconds
-Radix Sort      - Reversed            : Execution Time: 0.000000 seconds
-Radix Sort      - Nearly Sorted       : Execution Time: 0.000000 seconds
-Radix Sort      - Duplicate Values    : Execution Time: 0.000000 seconds
-Radix Sort      - Identical Elements  : Execution Time: 0.000000 seconds
-Radix Sort      - Two Unique Values   : Execution Time: 0.000000 seconds
-Radix Sort      - Three Unique Values : Execution Time: 0.000000 seconds
-Radix Sort      - Four Unique Values  : Execution Time: 0.000000 seconds
-Radix Sort      - Five Unique Values  : Execution Time: 0.000000 seconds
+Radix Sort      - Random              : Execution Time: 0.032093 seconds
+Radix Sort      - Sorted              : Execution Time: 0.031836 seconds
+Radix Sort      - Reversed            : Execution Time: 0.032139 seconds
+Radix Sort      - Nearly Sorted       : Execution Time: 0.032719 seconds
+Radix Sort      - Duplicate Values    : Execution Time: 0.021625 seconds
+Radix Sort      - Identical Elements  : Execution Time: 0.011538 seconds
+Radix Sort      - Two Unique Values   : Execution Time: 0.012048 seconds
+Radix Sort      - Three Unique Values : Execution Time: 0.010854 seconds
+Radix Sort      - Four Unique Values  : Execution Time: 0.011770 seconds
+Radix Sort      - Five Unique Values  : Execution Time: 0.011104 seconds
 
-Sorted Execution Times:
-  - Random: 0.000000 seconds
-  - Sorted: 0.000000 seconds
-  - Reversed: 0.000000 seconds
-  - Nearly Sorted: 0.000000 seconds
-  - Duplicate Values: 0.000000 seconds
-  - Identical Elements: 0.000000 seconds
-  - Two Unique Values: 0.000000 seconds
-  - Three Unique Values: 0.000000 seconds
-  - Four Unique Values: 0.000000 seconds
-  - Five Unique Values: 0.000000 seconds
+Sorted Execution Times for Radix Sort: Fastest to Slowest
+Radix Sort - Three Unique Values: 0.010854 seconds
+Radix Sort - Five Unique Values: 0.011104 seconds
+Radix Sort - Identical Elements: 0.011538 seconds
+Radix Sort - Four Unique Values: 0.011770 seconds
+Radix Sort - Two Unique Values: 0.012048 seconds
+Radix Sort - Duplicate Values: 0.021625 seconds
+Radix Sort - Sorted: 0.031836 seconds
+Radix Sort - Random: 0.032093 seconds
+Radix Sort - Reversed: 0.032139 seconds
+Radix Sort - Nearly Sorted: 0.032719 seconds
+
+Results for Merge Sort:
+Merge Sort      - Random              : Execution Time: 1.089400 seconds
+Merge Sort      - Sorted              : Execution Time: 1.037336 seconds
+Merge Sort      - Reversed            : Execution Time: 1.036836 seconds
+Merge Sort      - Nearly Sorted       : Execution Time: 1.036552 seconds
+Merge Sort      - Duplicate Values    : Execution Time: 1.044222 seconds
+Merge Sort      - Identical Elements  : Execution Time: 1.048446 seconds
+Merge Sort      - Two Unique Values   : Execution Time: 1.042545 seconds
+Merge Sort      - Three Unique Values : Execution Time: 1.030084 seconds
+Merge Sort      - Four Unique Values  : Execution Time: 1.042527 seconds
+Merge Sort      - Five Unique Values  : Execution Time: 1.048449 seconds
+
+Sorted Execution Times for Merge Sort: Fastest to Slowest
+Merge Sort - Three Unique Values: 1.030084 seconds
+Merge Sort - Nearly Sorted: 1.036552 seconds
+Merge Sort - Reversed: 1.036836 seconds
+Merge Sort - Sorted: 1.037336 seconds
+Merge Sort - Four Unique Values: 1.042527 seconds
+Merge Sort - Two Unique Values: 1.042545 seconds
+Merge Sort - Duplicate Values: 1.044222 seconds
+Merge Sort - Identical Elements: 1.048446 seconds
+Merge Sort - Five Unique Values: 1.048449 seconds
+Merge Sort - Random: 1.089400 seconds
+
+Results for Heap Sort:
+Heap Sort       - Random              : Execution Time: 7.241035 seconds
+Heap Sort       - Sorted              : Execution Time: 7.255894 seconds
+Heap Sort       - Reversed            : Execution Time: 7.278575 seconds
+Heap Sort       - Nearly Sorted       : Execution Time: 7.263363 seconds
+Heap Sort       - Duplicate Values    : Execution Time: 2.133197 seconds
+Heap Sort       - Identical Elements  : Execution Time: 1.563015 seconds
+Heap Sort       - Two Unique Values   : Execution Time: 4.292279 seconds
+Heap Sort       - Three Unique Values : Execution Time: 5.089012 seconds
+Heap Sort       - Four Unique Values  : Execution Time: 5.538073 seconds
+Heap Sort       - Five Unique Values  : Execution Time: 5.898068 seconds
+
+Sorted Execution Times for Heap Sort: Fastest to Slowest
+Heap Sort - Identical Elements: 1.563015 seconds
+Heap Sort - Duplicate Values: 2.133197 seconds
+Heap Sort - Two Unique Values: 4.292279 seconds
+Heap Sort - Three Unique Values: 5.089012 seconds
+Heap Sort - Four Unique Values: 5.538073 seconds
+Heap Sort - Five Unique Values: 5.898068 seconds
+Heap Sort - Random: 7.241035 seconds
+Heap Sort - Sorted: 7.255894 seconds
+Heap Sort - Nearly Sorted: 7.263363 seconds
+Heap Sort - Reversed: 7.278575 seconds
+
+Results for Quick Sort:
+Quick Sort      - Random              : Execution Time: 1.024863 seconds
+Quick Sort      - Sorted              : Execution Time: 1.050833 seconds
+Quick Sort      - Reversed            : Execution Time: 1.041078 seconds
+Quick Sort      - Nearly Sorted       : Execution Time: 0.949212 seconds
+Quick Sort      - Duplicate Values    : Execution Time: 1.036097 seconds
+Quick Sort      - Identical Elements  : Execution Time: 1.038476 seconds
+Quick Sort      - Two Unique Values   : Execution Time: 1.025519 seconds
+Quick Sort      - Three Unique Values : Execution Time: 0.996855 seconds
+Quick Sort      - Four Unique Values  : Execution Time: 0.993357 seconds
+Quick Sort      - Five Unique Values  : Execution Time: 0.997629 seconds
+
+Sorted Execution Times for Quick Sort: Fastest to Slowest
+Quick Sort - Nearly Sorted: 0.949212 seconds
+Quick Sort - Four Unique Values: 0.993357 seconds
+Quick Sort - Three Unique Values: 0.996855 seconds
+Quick Sort - Five Unique Values: 0.997629 seconds
+Quick Sort - Random: 1.024863 seconds
+Quick Sort - Two Unique Values: 1.025519 seconds
+Quick Sort - Duplicate Values: 1.036097 seconds
+Quick Sort - Identical Elements: 1.038476 seconds
+Quick Sort - Reversed: 1.041078 seconds
+Quick Sort - Sorted: 1.050833 seconds
 
