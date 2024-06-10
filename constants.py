@@ -1,6 +1,14 @@
-class Constants:
-    CANVAS_WIDTH = 800
-    CANVAS_HEIGHT = 400
-    BG_COLOR = "white"
-    BAR_COLOR = "cyan"
-    SORTING_SPEED = 5
+# constants.py
+
+# Color values for visualization
+COLOR_BAR = "blue"
+COLOR_BACKGROUND = "white"
+COLOR_HIGHLIGHT = "red"
+
+# Speed settings
+SPEED_SLOW = 0.5
+SPEED_MEDIUM = 1
+SPEED_FAST = 2
+
+# Maximum array size
+MAX_ARRAY_SIZE = 100

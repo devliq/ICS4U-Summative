@@ -1,11 +1,13 @@
+import time
+
 def heap_sort(data, update_visualization, speed):
     def heapify(arr, n, i):
         largest = i
         l = 2 * i + 1
         r = 2 * i + 2
-        if l < n and arr[i] < arr[l]:
+        if l < n and arr[l] > arr[largest]:
             largest = l
-        if r < n and arr[largest] < arr[r]:
+        if r < n and arr[r] > arr[largest]:
             largest = r
         if largest != i:
             arr[i], arr[largest] = arr[largest], arr[i]
