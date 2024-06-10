@@ -1,11 +1,11 @@
+import time
+import random
 import tkinter as tk
 from ttkbootstrap import Style
 from sorting_visualizer import SortingVisualizer
 from config import SortingAppConfig
 from dicts import SortingMethodsDict
 from threading import Thread
-import time
-import random
 
 class SortingApp:
     def __init__(self, master):
