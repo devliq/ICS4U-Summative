@@ -18,8 +18,8 @@ class TestSortingAlgorithms(unittest.TestCase):
             module = __import__(function_name)
             self.sorting_algorithms[algorithm] = getattr(module, function_name)
         
-        # Open the results file
-        self.results_file = open('tests/results_sorting.txt', 'w')
+        # Open the results file with encoding
+        self.results_file = open('tests/results_sorting.txt', 'w', encoding='utf-8')
 
     def tearDown(self):
         # Close the results file
@@ -38,7 +38,8 @@ class TestSortingAlgorithms(unittest.TestCase):
             sorted_execution_times = []
             for dataset_name, dataset in DATASETS.items():
                 start_time = time.time()
-                sort_func(dataset, lambda x: None, lambda: 1)
+                # Pass a no-op lambda to eliminate delay
+                sort_func(dataset, lambda x: None, lambda: float('inf'))
                 end_time = time.time()
                 execution_time = end_time - start_time
                 self.print_sort_result(sort_name, dataset_name, execution_time)
@@ -57,3 +58,4 @@ class TestSortingAlgorithms(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
